@@ -1,0 +1,22 @@
+.slider-con-sm {
+  height: 280px;
+  font-family: 'Roboto';
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cover-pic-sm {
+  height: 150px;
+  width: 200px;
+}
+.head-sm {
+  font-size: 13px;
+  color: black;
+}
+.para-sm {
+  font-size: 10px;
+  color: black;
+}

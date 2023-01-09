@@ -1,0 +1,20 @@
+.not-found {
+  height: 250px;
+}
+.div-not-found {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.head-not-found {
+  color: #334155;
+}
+
+.para-not-found {
+  color: #334155;
+  font-size: 15px;
+}

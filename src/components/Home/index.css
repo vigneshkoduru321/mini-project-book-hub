@@ -1,0 +1,140 @@
+.main-home-container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Roboto';
+}
+.footer-con {
+  margin-top: 100px;
+}
+.header-container-lg {
+  height: 60px;
+}
+.scroll-con {
+  height: 100%;
+  overflow: auto;
+}
+.loader-con-home {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.find-content-conatiner {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-left: 10%;
+  margin-top: 60px;
+}
+.find-heading {
+  font-size: 20px;
+}
+.find-para {
+  font-size: 15px;
+  font-family: 'Roboto';
+}
+.find-books-button {
+  width: 100px;
+  height: 40px;
+  border-radius: 5px;
+  border-width: 0px;
+  color: white;
+  font-weight: 500;
+  background-color: blueviolet;
+}
+.find-books-button-lg {
+  width: 100px;
+  height: 40px;
+  border-radius: 5px;
+  border-width: 0px;
+  color: white;
+  font-weight: 500;
+  background-color: blueviolet;
+}
+.top-rated-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.slider-container-main {
+  height: 200px;
+  width: 80%;
+  border-radius: 20px;
+}
+.slider-container-main-sm {
+  height: 250px;
+  width: 90%;
+}
+.slider {
+  height: 300px;
+  width: 90%;
+  background-color: white;
+}
+.slider-sm {
+  height: 300px;
+  width: 90%;
+  background-color: white;
+}
+.slider-container {
+  background-color: #419be0;
+  height: 300px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+}
+.slider-container-sm {
+  background-color: #419be0;
+  height: 300px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+}
+.slider-main-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 576px) {
+  .header-container-lg {
+    display: none;
+  }
+  .find-heading {
+    font-size: 17px;
+  }
+  .find-para {
+    font-size: 12px;
+    font-family: 'Roboto';
+  }
+  .find-content-conatiner {
+    margin-top: 0px;
+  }
+  .top-heading {
+    font-size: 20px;
+  }
+  .find-books-button-lg {
+    display: none;
+  }
+  .slider-container-main {
+    display: none;
+  }
+}
+@media (min-width: 576px) {
+  .header-container-sm {
+    display: none;
+  }
+  .find-books-button {
+    display: none;
+  }
+  .slider-container-main-sm {
+    display: none;
+  }
+}
