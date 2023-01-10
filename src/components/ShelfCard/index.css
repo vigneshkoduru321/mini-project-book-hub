@@ -3,6 +3,7 @@
   width: 300px;
   margin: 10px;
   display: flex;
+  font-family: 'Roboto';
 }
 .cover-shelf-card {
   height: 100%;
@@ -17,22 +18,32 @@
   margin-left: 10px;
 }
 .head-card {
-  font-size: 15px;
-  color: black;
+  font-size: 18px;
+  color: #334155;
+  font-weight: 700;
 }
 .star {
   color: gold;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.span {
+  color: #0284c7;
+  font-weight: 500;
+  font-size: 13px;
 }
 .para-card {
   font-size: 15px;
-  color: black;
+  color: #475569;
+  font-weight: 500;
 }
 .para {
   font-size: 13px;
-  color: black;
+  color: #475569;
+  font-weight: 400;
 }
 .para-status {
-  color: black;
+  color: #475569;
   font-size: 13px;
 }
 @media (max-width: 576px) {

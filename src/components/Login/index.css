@@ -6,6 +6,11 @@
   height: 100vh;
   width: 100vw;
 }
+.label {
+  color: #5a7184;
+  font-family: 'Roboto';
+  font-weight: 600;
+}
 .login-img {
   height: 100%;
   width: 50%;
@@ -51,8 +56,10 @@
   color: white;
   font-weight: 600px;
   border-width: 0px;
-  border-radius: 10px;
+  border-radius: 7px;
   margin: 20px;
+  font-family: 'Roboto';
+  font-weight: 500;
 }
 .input-elements {
   width: 200px;
@@ -64,10 +71,13 @@
   font-size: 15px;
 }
 .error-con {
-  height: 30px;
+  height: 20px;
+  width: 200px;
+  text-align: center;
 }
 .error-msg {
   color: red;
+  font-size: 13px;
 }
 @media (max-width: 576px) {
   .login-main-container {

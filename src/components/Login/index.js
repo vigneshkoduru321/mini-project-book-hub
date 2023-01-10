@@ -87,7 +87,7 @@ class Login extends Component {
               <input
                 onChange={this.onChangePassword}
                 value={password}
-                type="password"
+                type={isShowPass ? 'text' : 'password'}
                 id="password"
                 placeholder="PASSWORD"
                 className="input-elements"
@@ -103,6 +103,7 @@ class Login extends Component {
                 Show Password
               </label>
             </div>
+
             <div>
               <button type="submit" className="submit-button">
                 Login

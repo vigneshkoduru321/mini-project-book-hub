@@ -80,7 +80,9 @@ class BookDetails extends Component {
               Avg Rating <BsFillStarFill className="star" />
               {rating}
             </p>
-            <p className="paraa">Status: {readStatus}</p>
+            <p className="para-status">
+              Status: <span className="span">{readStatus}</span>
+            </p>
           </div>
         </div>
         <hr className="horizontal-line" />

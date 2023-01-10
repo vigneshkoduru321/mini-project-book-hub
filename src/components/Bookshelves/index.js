@@ -269,7 +269,9 @@ class Bookshelves extends Component {
                   className="no-match-img"
                 />
                 <p className="head-shelves">
-                  Your search for {searchValue} did not find any matches.
+                  Your search for{' '}
+                  <span className="span-error">{searchValue}</span> did not find
+                  any matches.
                 </p>
               </div>
             ) : (

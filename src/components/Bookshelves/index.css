@@ -50,9 +50,9 @@ li {
   line-height: 24px;
 }
 .BooksShelves {
-  color: #6f90b1;
+  color: #334155;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 25px;
   line-height: 32px;
   font-family: 'Roboto';
   margin-left: 10px;
@@ -124,13 +124,12 @@ li {
 }
 
 .heading-shelves {
-  color: #0284c7;
+  color: #334155;
   font-weight: 500;
   font-size: 25px;
   font-family: 'Roboto';
 }
-.main-div {
-}
+
 .div {
   display: flex;
   flex-direction: row;
@@ -157,6 +156,10 @@ li {
   color: #334155;
   font-size: 15px;
   font-weight: 500;
+}
+.span-error {
+  color: #0284c7;
+  font-weight: 700;
 }
 .top-bar-sm {
   display: flex;

@@ -1,11 +1,12 @@
 .main-details-container {
   height: 100vh;
   width: 80vw;
+  font-family: 'Roboto';
 }
 
 .cover-pic-detail {
   height: 200px;
-  width: 150px;
+  width: 200px;
   border-radius: 10px;
 }
 .img-con {
@@ -48,16 +49,14 @@
 }
 
 .head {
-  color: #1e293b;
+  color: #334155;
   font-weight: 700;
   font-size: 25px;
-  line-height: 24px;
 }
 .para {
   color: #334155;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 14px;
-  line-height: 25px;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -67,10 +66,15 @@
 }
 
 .para-detail {
-  color: #334155;
-  font-size: 13px;
+  color: #475569;
+  font-size: 15px;
   font-weight: 400;
   font-family: 'Roboto';
+}
+.para-status {
+  color: #1e293b;
+  font-size: 13px;
+  font-weight: 450;
 }
 
 .Paraa {
@@ -109,6 +113,9 @@
 .container-details {
   height: 500px;
   width: 100%;
+}
+.heading-detail {
+  color: #334155;
 }
 @media (max-width: 576px) {
   .head {
