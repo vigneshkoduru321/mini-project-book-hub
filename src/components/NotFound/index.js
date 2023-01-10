@@ -23,7 +23,7 @@ class NotFound extends Component {
           we are sorry, the page you requested could not be found
         </p>
         <Link to="/">
-          <button>Go Back to Home</button>
+          <button onClick={this.onClickHome}>Go Back to Home</button>
         </Link>
       </div>
     )

@@ -181,12 +181,12 @@ class Bookshelves extends Component {
     const {booksNotFound, searchValue} = this.state
     return (
       <ul className="main-div">
-        <div className="header-container-lg">
+        <li className="header-container-lg">
           <Header />
-        </div>
-        <div className="header-container-sm">
+        </li>
+        <li className="header-container-sm">
           <HeaderSm />
-        </div>
+        </li>
         <li className="div-container-book">
           <div className="side-bar">
             <div>
@@ -248,7 +248,7 @@ class Bookshelves extends Component {
                   type="search"
                 />
                 <div>
-                  <div testid="searchButton">
+                  <div>
                     <button
                       testid="searchButton"
                       type="button"

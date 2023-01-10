@@ -48,7 +48,7 @@ class Home extends Component {
   }
 
   renderLoading = () => (
-    <div id="loader" className="loader-con-home">
+    <div testid="loader" className="loader-con-home">
       <div className="products-loader-container">
         <Loader type="ThreeDots" color="#0b69ff" height="50" width="50" />
       </div>
@@ -63,13 +63,15 @@ class Home extends Component {
       slidesToScroll: 1,
     }
     return (
-      <div className="slider-container">
-        <Slider className="slider" {...settings}>
-          {Data.map(each => (
-            <SliderCard details={each} key={each.id} />
-          ))}
-        </Slider>
-      </div>
+      <ul className="slider-container">
+        <li>
+          <Slider className="slider" {...settings}>
+            {Data.map(each => (
+              <SliderCard details={each} key={each.id} />
+            ))}
+          </Slider>
+        </li>
+      </ul>
     )
   }
 
@@ -87,11 +89,13 @@ class Home extends Component {
     }
     return (
       <div className="slider-container-sm">
-        <Slider className="slider-sm" {...settingsSm}>
-          {Data.map(each => (
-            <SliderCardSm details={each} key={each.id} />
-          ))}
-        </Slider>
+        <li>
+          <Slider className="slider-sm" {...settingsSm}>
+            {Data.map(each => (
+              <SliderCardSm details={each} key={each.id} />
+            ))}
+          </Slider>
+        </li>
       </div>
     )
   }
@@ -140,7 +144,7 @@ class Home extends Component {
 
   render() {
     return (
-      <div className="main-home-container">
+      <ul className="main-home-container">
         <div className="header-container-lg">
           <Header />
         </div>
@@ -148,7 +152,7 @@ class Home extends Component {
           <HeaderSm />
         </div>
         <div className="scroll-con">
-          <div className="find-content-conatiner">
+          <li className="find-content-conatiner">
             <h1 className="find-heading">Find Your Next Favorite Books?</h1>
             <p className="find-para">
               You are in the right place. Tell us what titles or genres you have
@@ -158,7 +162,7 @@ class Home extends Component {
             <Link style={{textDecoration: 'none'}} to="/shelf">
               <button className="find-books-button">Find Books</button>
             </Link>
-          </div>
+          </li>
           <div className="top-rated-container">
             <h1 className="top-heading">Top Rated Books</h1>
             <Link style={{textDecoration: 'none'}} to="/shelf">
@@ -175,7 +179,7 @@ class Home extends Component {
             <Footer />
           </div>
         </div>
-      </div>
+      </ul>
     )
   }
 }

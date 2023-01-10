@@ -7,6 +7,9 @@
   font-family: 'Roboto';
   margin-top: 20px;
 }
+li {
+  list-style-type: none;
+}
 .logout-container {
   width: 400px;
   display: flex;

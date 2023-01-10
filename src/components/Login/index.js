@@ -87,7 +87,7 @@ class Login extends Component {
               <input
                 onChange={this.onChangePassword}
                 value={password}
-                type={isShowPass ? 'text' : 'password'}
+                type="password"
                 id="password"
                 placeholder="PASSWORD"
                 className="input-elements"

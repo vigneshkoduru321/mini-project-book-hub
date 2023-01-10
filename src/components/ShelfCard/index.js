@@ -18,7 +18,8 @@ const ShelfCard = props => {
               Avg Rating <BsFillStarFill className="star" />
               {rating}
             </p>
-            <p className="para">Status : {readStatus}</p>
+            <p>Status</p>
+            <p className="para">{readStatus}</p>
           </div>
         </div>
       </Link>

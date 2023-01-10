@@ -13,30 +13,34 @@ class Header extends Component {
 
   render() {
     return (
-      <nav className="nav">
-        <Link style={{textDecoration: 'none'}} to="/">
-          <img
-            className="nav-logo"
-            src="https://res.cloudinary.com/dzn2lfoqa/image/upload/v1672330658/Group_7731_logo_krdzru.png"
-            alt="website logo"
-          />
-        </Link>
-        <div className="logout-container">
+      <ul className="nav">
+        <li>
           <Link style={{textDecoration: 'none'}} to="/">
-            <p className="home-name">Home</p>
+            <img
+              className="nav-logo"
+              src="https://res.cloudinary.com/dzn2lfoqa/image/upload/v1672330658/Group_7731_logo_krdzru.png"
+              alt="website logo"
+            />
           </Link>
-          <Link style={{textDecoration: 'none'}} to="/shelf">
-            <p className="bookshelves-name">Bookshelves</p>
-          </Link>
-          <button
-            type="button"
-            className="log-out-button"
-            onClick={this.onClickLogout}
-          >
-            Logout
-          </button>
-        </div>
-      </nav>
+        </li>
+        <li>
+          <div className="logout-container">
+            <Link style={{textDecoration: 'none'}} to="/">
+              <p className="home-name">Home</p>
+            </Link>
+            <Link style={{textDecoration: 'none'}} to="/shelf">
+              <p className="bookshelves-name">Bookshelves</p>
+            </Link>
+            <button
+              type="button"
+              className="log-out-button"
+              onClick={this.onClickLogout}
+            >
+              Logout
+            </button>
+          </div>
+        </li>
+      </ul>
     )
   }
 }
