@@ -10,9 +10,8 @@ const SliderCard = props => {
       <Link style={{textDecoration: 'none'}} to={`/books/${id}`}>
         <div className="slider-con">
           <img src={coverPic} alt={title} className="cover-pic" />
-          <h1 className="head">{title}</h1>
-          <p className="para">{authorName}</p>
-          <h1 className="para">{authorName}</h1>
+          <h1 className="heading">{title}</h1>
+          <p className="paragraph">{authorName}</p>
         </div>
       </Link>
     </li>

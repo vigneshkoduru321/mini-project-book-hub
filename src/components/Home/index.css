@@ -1,129 +1,116 @@
-.main-home-container {
-  height: 100vh;
-  width: 100vw;
+.slick-prev,
+.slick-prev:before,
+.slick-prev:hover {
+  z-index: 1;
+  background: #419be0;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
   display: flex;
   flex-direction: column;
-  font-family: 'Roboto';
-}
-.footer-con {
-  margin-top: 100px;
-}
-.header-container-lg {
-  height: 60px;
-}
-.scroll-con {
-  height: 100%;
-  overflow: auto;
-}
-.loader-con-home {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
-.find-content-conatiner {
+
+.slick-next,
+.slick-next::before,
+.slick-next:hover {
+  z-index: 1;
+  background: #419be0;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  margin-left: 10%;
-  margin-top: 60px;
+  justify-content: center;
+  align-items: center;
 }
-.find-heading {
-  font-size: 20px;
+
+.slick-prev:before {
+  font-size: 25px;
 }
-.find-para {
+
+.slick-next:before {
+  font-size: 25px;
+}
+
+.main-home-container {
+  height: 95vh;
+  width: 100vw;
+}
+.home-content-container {
+  overflow: auto;
+  height: 530px;
+  width: 100%;
+}
+.heading-find {
+  font-size: 25px;
+}
+.para-find {
   font-size: 15px;
-  font-family: 'Roboto';
 }
-.find-books-button {
-  width: 100px;
-  height: 40px;
-  border-radius: 5px;
-  border-width: 0px;
-  color: white;
-  font-weight: 500;
-  background-color: blueviolet;
+.find-container {
+  margin-left: 30px;
 }
-.find-books-button-lg {
-  width: 100px;
+.find-button-sm {
+  width: 120px;
   height: 40px;
-  border-radius: 5px;
+  background-color: #419be0;
+  border-radius: 10px;
   border-width: 0px;
-  color: white;
-  font-weight: 500;
-  background-color: blueviolet;
 }
 .top-rated-container {
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 40px;
 }
-.slider-container-main {
-  height: 200px;
-  width: 80%;
-  border-radius: 20px;
-}
-.slider-container-main-sm {
-  height: 250px;
-  width: 90%;
-}
-.slider {
-  height: 300px;
-  width: 90%;
-  background-color: white;
-}
-.slider-sm {
-  height: 300px;
-  width: 90%;
-  background-color: white;
-}
-.slider-container {
+.find-button-lg {
+  width: 120px;
+  height: 40px;
   background-color: #419be0;
-  height: 300px;
-  border-radius: 50px;
+  border-radius: 10px;
+  border-width: 0px;
+}
+.top-rated-heading {
+  font-size: 25px;
+}
+.render-items-container {
+  height: 500px;
+  width: 100%;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.slider-container-lg {
+  height: 250px;
+  width: 1000px;
+  margin-top: 20px;
 }
 .slider-container-sm {
-  background-color: #419be0;
-  height: 300px;
-  border-radius: 50px;
-  display: flex;
-  justify-content: center;
-}
-.slider-main-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  width: 300px;
+  margin-right: 40px;
 }
 @media (max-width: 576px) {
   .header-container-lg {
     display: none;
   }
-  .find-heading {
-    font-size: 17px;
-  }
-  .find-para {
-    font-size: 12px;
-    font-family: 'Roboto';
-  }
-  .find-content-conatiner {
-    margin-top: 0px;
-  }
-  .top-heading {
-    font-size: 20px;
-  }
-  .find-books-button-lg {
+  .find-button-lg {
     display: none;
   }
-  .slider-container-main {
+  .heading-find {
+    font-size: 22px;
+  }
+  .para-find {
+    font-size: 12px;
+  }
+  .top-rated-heading {
+    font-size: 22px;
+  }
+  .slider-container-lg {
     display: none;
   }
 }
@@ -131,10 +118,10 @@
   .header-container-sm {
     display: none;
   }
-  .find-books-button {
+  .find-button-sm {
     display: none;
   }
-  .slider-container-main-sm {
+  .slider-container-sm {
     display: none;
   }
 }

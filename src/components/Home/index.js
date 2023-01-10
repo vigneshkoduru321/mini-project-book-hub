@@ -62,17 +62,28 @@ class Home extends Component {
       slidesToShow: 4,
       slidesToScroll: 1,
     }
+    const settingsm = {
+      dots: false,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+    }
     return (
-      <div className="slider-container">
-        <ul>
+      <div>
+        <ul className="slider-container-lg">
           <Slider {...settings}>
             {Data.map(each => (
-              <li>
-                <SliderCard details={each} key={each.id} />
-              </li>
+              <SliderCard details={each} key={each.id} />
             ))}
           </Slider>
         </ul>
+        <ul className="slider-container-sm">
+          <Slider {...settingsm}>
+            {Data.map(each => (
+              <SliderCard details={each} key={each.id} />
+            ))}
+          </Slider>
+        </ul>
+        <Footer />
       </div>
     )
   }
@@ -107,27 +118,34 @@ class Home extends Component {
 
   render() {
     return (
-      <ul className="home-con">
-        <Header />
-        <li className="banner-con">
-          <h1 className="heading">Find Your Next Favorite Books?</h1>
-          <p className="paragraph">
-            You are in the right place. Tell us what titles or genres you have
-            enjoyed in the past, and we will give you surprisingly insightful
-            recommendations.
-          </p>
+      <div className="main-home-container">
+        <li className="header-container-lg">
+          <Header />
         </li>
-        <li className="div-top">
-          <div className="top-head-button">
-            <h1 className="head">Top Rated Books</h1>
-            <Link to="/shelf">
-              <button className="find-books">Find Books</button>
+        <li className="header-container-sm">
+          <HeaderSm />
+        </li>
+        <div className="home-content-container">
+          <div className="find-container">
+            <h1 className="heading-find">Find Your Next Favorite Books?</h1>
+            <p className="para-find">
+              You are in the right place. Tell us what titles or genres you have
+              enjoyed in the past, and we will give you surprisingly insightful
+              recommendations.
+            </p>
+            <Link style={{textDecoration: 'none'}} to="/shelf">
+              <button className="find-button-sm">Find Books</button>
             </Link>
+            <div className="top-rated-container">
+              <h1 className="top-rated-heading">Top Rated Books</h1>
+              <Link style={{textDecoration: 'none'}} to="/shelf">
+                <button className="find-button-lg">Find Books</button>
+              </Link>
+            </div>
+            <div className="render-items-container">{this.renderItem()}</div>
           </div>
-          <div className="data-con">{this.renderItem()}</div>
-        </li>
-        <Footer />
-      </ul>
+        </div>
+      </div>
     )
   }
 }

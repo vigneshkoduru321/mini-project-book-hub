@@ -1,3 +1,8 @@
+.main-details-container {
+  height: 100vh;
+  width: 80vw;
+}
+
 .cover-pic-detail {
   height: 200px;
   width: 150px;
@@ -12,8 +17,9 @@
 }
 .content-detail-con {
   margin-left: 30px;
-  width: 80%;
+  width: 100%;
   display: flex;
+  overflow: auto;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
@@ -23,12 +29,14 @@
   width: 90%;
   border-style: solid;
   margin-top: 15px;
+  background-color: #94a3b8;
 }
 .about-con {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  margin-left: 30px;
 }
 .loading-con {
   height: 600px;
@@ -99,13 +107,13 @@
   height: 100%;
 }
 .container-details {
-  height: 550px;
+  height: 500px;
   width: 100%;
 }
 @media (max-width: 576px) {
   .head {
     color: #1e293b;
-    font-size: 22px;
+    font-size: 20px;
   }
   .para {
     color: #334155;
@@ -146,6 +154,10 @@
     font-size: 15px;
   }
   .about-con {
-    margin: 10px;
+    margin: 15px;
+  }
+
+  .cover-pic-detail {
+    margin-left: 15px;
   }
 }

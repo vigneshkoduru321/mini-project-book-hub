@@ -31,6 +31,10 @@
   font-size: 13px;
   color: black;
 }
+.para-status {
+  color: black;
+  font-size: 13px;
+}
 @media (max-width: 576px) {
   .shelf-card {
     height: 220px;

@@ -70,30 +70,28 @@ class BookDetails extends Component {
       title,
     } = Data
     return (
-      <>
-        <div className="div-book-details">
-          <div className="img-con">
-            <img src={coverPic} alt={title} className="cover-pic-detail" />
-            <div className="content-detail-con">
-              <h1 className="head">{title}</h1>
-              <p className="para">{authorName}</p>
-              <p className="para">
-                Avg Rating <BsFillStarFill className="star" />
-                {rating}
-              </p>
-              <p className="paraa">Status: {readStatus}</p>
-            </div>
+      <div className="div-book-details">
+        <div className="img-con">
+          <img src={coverPic} alt={title} className="cover-pic-detail" />
+          <div className="content-detail-con">
+            <h1 className="head">{title}</h1>
+            <p className="para">{authorName}</p>
+            <p className="para">
+              Avg Rating <BsFillStarFill className="star" />
+              {rating}
+            </p>
+            <p className="paraa">Status: {readStatus}</p>
           </div>
-          <hr className="horizontal-line" />
-          <div className="about-con">
-            <h1 className="heading-detail">About Author</h1>
-            <p className="para-detail">{aboutAuthor}</p>
-            <h1 className="heading-detail">About Book</h1>
-            <p className="para-detail">{aboutBook}</p>
-          </div>
-          <Footer />
         </div>
-      </>
+        <hr className="horizontal-line" />
+        <div className="about-con">
+          <h1 className="heading-detail">About Author</h1>
+          <p className="para-detail">{aboutAuthor}</p>
+          <h1 className="heading-detail">About Book</h1>
+          <p className="para-detail">{aboutBook}</p>
+        </div>
+        <Footer />
+      </div>
     )
   }
 
