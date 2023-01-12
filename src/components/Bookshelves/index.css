@@ -192,6 +192,10 @@ li {
   width: 100%;
   overflow: auto;
 }
+.main-div {
+  margin: 0px;
+  padding: 0px;
+}
 @media (max-width: 576px) {
   .side-bar {
     display: none;
